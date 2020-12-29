@@ -14,7 +14,8 @@
     <description>MSSC Beer Order Service</description>
     <properties>
         <spring-statemachine-core.version>2.2.1.RELEASE</spring-statemachine-core.version>
-        <wiremock-extension.version>0.4.0</wiremock-extension.version>
+<!--        <wiremock-extension.version>0.4.0</wiremock-extension.version>-->
+        <wiremock-standalone.version>2.27.2</wiremock-standalone.version>
     </properties>
 
     <dependencies>
@@ -23,10 +24,16 @@
             <artifactId>spring-statemachine-core</artifactId>
             <version>${spring-statemachine-core.version}</version>
         </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.github.JensPiegsa</groupId>-->
+<!--            <artifactId>wiremock-extension</artifactId>-->
+<!--            <version>${wiremock-extension.version}</version>-->
+<!--            <scope>test</scope>-->
+<!--        </dependency>-->
         <dependency>
-            <groupId>com.github.JensPiegsa</groupId>
-            <artifactId>wiremock-extension</artifactId>
-            <version>${wiremock-extension.version}</version>
+            <groupId>com.github.tomakehurst</groupId>
+            <artifactId>wiremock-jre8-standalone</artifactId>
+            <version>${wiremock-standalone.version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
@@ -41,11 +48,11 @@
         </dependency>
     </dependencies>
 
-    <repositories>
-        <repository>
-            <id>jitpack.io</id>
-            <url>https://jitpack.io</url>
-        </repository>
-    </repositories>
+<!--    <repositories>-->
+<!--        <repository>-->
+<!--            <id>jitpack.io</id>-->
+<!--            <url>https://jitpack.io</url>-->
+<!--        </repository>-->
+<!--    </repositories>-->
 
 </project>
