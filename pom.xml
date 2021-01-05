@@ -17,6 +17,7 @@
 <!--        <wiremock-extension.version>0.4.0</wiremock-extension.version>-->
         <wiremock-standalone.version>2.27.2</wiremock-standalone.version>
         <spring-cloud.version>2020.0.0</spring-cloud.version>
+        <logstash-logback-encoder.version>6.6</logstash-logback-encoder.version>
     </properties>
 
     <dependencies>
@@ -45,6 +46,11 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-bootstrap</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>net.logstash.logback</groupId>
+            <artifactId>logstash-logback-encoder</artifactId>
+            <version>${logstash-logback-encoder.version}</version>
         </dependency>
 <!--        <dependency>-->
 <!--            <groupId>com.github.JensPiegsa</groupId>-->
